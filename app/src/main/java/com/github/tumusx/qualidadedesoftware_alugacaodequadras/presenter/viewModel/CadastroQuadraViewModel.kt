@@ -2,7 +2,7 @@ package com.github.tumusx.qualidadedesoftware_alugacaodequadras.presenter.viewMo
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.github.tumusx.qualidadedesoftware_alugacaodequadras.datalocal.entity.Area
+import com.github.tumusx.qualidadedesoftware_alugacaodequadras.datalocal.entity.Quadra
 import com.github.tumusx.qualidadedesoftware_alugacaodequadras.datalocal.repository.AreaRepositoryImpl
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -13,14 +13,14 @@ class CadastroQuadraViewModel(private val areaRepositoryImpl: AreaRepositoryImpl
     private val _state: MutableStateFlow<Boolean> = MutableStateFlow(false)
     private val state: StateFlow<Boolean> = _state
 
-    fun cadastrarAreas(area: Area) {
+    fun cadastrarAreas(area: Quadra) {
         viewModelScope.launch(Dispatchers.IO) {
             try {
                 areaRepositoryImpl.criarArea(area).collect{isResult->
                     _state.value = isResult
                 }
             }catch (exception: Exception) {
-
+                exception.printStackTrace()
             }
         }
     }

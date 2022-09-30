@@ -4,7 +4,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.github.tumusx.qualidadedesoftware_alugacaodequadras.R
 import com.github.tumusx.qualidadedesoftware_alugacaodequadras.common.ResultState
-import com.github.tumusx.qualidadedesoftware_alugacaodequadras.datalocal.entity.Area
+import com.github.tumusx.qualidadedesoftware_alugacaodequadras.datalocal.entity.Quadra
 import com.github.tumusx.qualidadedesoftware_alugacaodequadras.datalocal.repository.AreaRepositoryImpl
 import com.github.tumusx.qualidadedesoftware_alugacaodequadras.presenter.state.StateAreas
 import kotlinx.coroutines.Dispatchers
@@ -39,7 +39,7 @@ class AreaViewModel(private val areaRepository: AreaRepositoryImpl) : ViewModel(
     }
 
 
-    fun alugarQuadra(area: Area) {
+    fun alugarQuadra(area: Quadra) {
         viewModelScope.launch(Dispatchers.IO) {
             areaRepository.alugarArea(area).collect{isResult->
                 _alugarAreaResult.value = isResult

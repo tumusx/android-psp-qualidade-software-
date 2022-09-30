@@ -10,4 +10,7 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="error_list_quadras">Erro ao listar quadras. Tente novamente</string>
+    <string name="digite_nome_quadra">Digite o nome da quadra</string>
+    <string name="digite_qntd_quadra">Digite a quantidade que ela pode ocupar</string>
+    <string name="salvar">Salvar</string>
 </resources>

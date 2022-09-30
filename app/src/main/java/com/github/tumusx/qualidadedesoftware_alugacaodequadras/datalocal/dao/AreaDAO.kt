@@ -1,19 +1,16 @@
 package com.github.tumusx.qualidadedesoftware_alugacaodequadras.datalocal.dao
 
-import androidx.room.Insert
-import androidx.room.OnConflictStrategy
-import androidx.room.Query
-import androidx.room.Update
-import com.github.tumusx.qualidadedesoftware_alugacaodequadras.datalocal.entity.Area
-
+import androidx.room.*
+import com.github.tumusx.qualidadedesoftware_alugacaodequadras.datalocal.entity.Quadra
+@Dao
 interface AreaDAO {
 
-    @Query("SELECT *FROM area")
-    suspend fun listarAreasCadastradas() : List<Area>
+    @Query("SELECT *FROM quadra")
+    suspend fun listarQuadras() : List<Quadra>
 
     @Insert
-    suspend fun cadastrarArea(vararg area: Area)
+    suspend fun cadastrarQuadra(vararg quadra: Quadra)
 
     @Update(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun alugarQuadra(vararg area: Area)
+    suspend fun alugarQuadra(vararg quadra: Quadra)
 }
