@@ -13,4 +13,15 @@
     <string name="digite_nome_quadra">Digite o nome da quadra</string>
     <string name="digite_qntd_quadra">Digite a quantidade que ela pode ocupar</string>
     <string name="salvar">Salvar</string>
+    <string name="informe_os_dados">É necessário preencher os dados abaixo corretamente.</string>
+    <string name="alugar_quadra">Deseja mesmo alugar a quadra?</string>
+    <string name="diaAlugarQuadra">Informe o dia para alugar a quadra:</string>
+    <string name="horarioAlugar">Informe o horario para alugar a quadra:</string>
+    <string name="esta_alugada">Está alugada</string>
+    <string name="quadra_alugada">Está quadra já está alugada. Tente outra ou espere.</string>
+    <string name="nao_esta_alugada">Não está alugada</string>
+    <string name="qntdAlugacao">Quantidade de pessoas que suporta: </string>
+    <string name="dia_alugacao">Dia: </string>
+    <string name="horario_alugacao">Horario: </string>
+    <string name="liberarQuadra">Deseja liberar a quadra?</string>
 </resources>

@@ -5,6 +5,7 @@ import androidx.lifecycle.viewModelScope
 import com.github.tumusx.qualidadedesoftware_alugacaodequadras.R
 import com.github.tumusx.qualidadedesoftware_alugacaodequadras.common.ResultState
 import com.github.tumusx.qualidadedesoftware_alugacaodequadras.datalocal.entity.Quadra
+import com.github.tumusx.qualidadedesoftware_alugacaodequadras.datalocal.repository.AreaRepository
 import com.github.tumusx.qualidadedesoftware_alugacaodequadras.datalocal.repository.AreaRepositoryImpl
 import com.github.tumusx.qualidadedesoftware_alugacaodequadras.presenter.state.StateAreas
 import kotlinx.coroutines.Dispatchers
@@ -22,13 +23,13 @@ class AreaViewModel(private val areaRepository: AreaRepositoryImpl) : ViewModel(
         listarQuadras()
     }
 
-    private fun listarQuadras() {
+     fun listarQuadras() {
         viewModelScope.launch(Dispatchers.IO) {
             _values.value = StateAreas.IsLoadingArea
             areaRepository.listarAreas().collect { resultState ->
                 when (resultState) {
                     is ResultState.SuccessResultDataSourceDataSourceUtil -> {
-                        _values.value = StateAreas.SuccessListArea(resultState.dataResult)
+                        _values.value = StateAreas.SuccessListArea(resultState.dataResult?.reversed())
                     }
                     is ResultState.ErrorResultDataSourceDataSourceUtil -> {
                         _values.value = StateAreas.ErrorListArea(R.string.error_list_quadras)

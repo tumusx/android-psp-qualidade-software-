@@ -23,5 +23,5 @@ data class Quadra(
     var horaUltimaAlugacao: String? = null,
 
     @ColumnInfo(name = "quantidadeOcupacao")
-    var quantidadeOcupacao: Int? = null
+    var quantidadeOcupacao: String? = null
 )

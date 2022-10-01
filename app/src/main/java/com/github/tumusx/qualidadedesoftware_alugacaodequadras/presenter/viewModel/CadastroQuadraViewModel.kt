@@ -11,15 +11,15 @@ import kotlinx.coroutines.launch
 
 class CadastroQuadraViewModel(private val areaRepositoryImpl: AreaRepositoryImpl) : ViewModel() {
     private val _state: MutableStateFlow<Boolean> = MutableStateFlow(false)
-    private val state: StateFlow<Boolean> = _state
+    val state: StateFlow<Boolean> = _state
 
     fun cadastrarAreas(area: Quadra) {
         viewModelScope.launch(Dispatchers.IO) {
             try {
-                areaRepositoryImpl.criarArea(area).collect{isResult->
+                areaRepositoryImpl.criarArea(area).collect { isResult ->
                     _state.value = isResult
                 }
-            }catch (exception: Exception) {
+            } catch (exception: Exception) {
                 exception.printStackTrace()
             }
         }

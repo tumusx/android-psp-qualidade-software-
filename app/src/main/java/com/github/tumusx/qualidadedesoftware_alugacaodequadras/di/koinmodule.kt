@@ -13,15 +13,13 @@ import org.koin.dsl.module
 
 val koinModule = module {
     fun provideDatabaseManager(application: Application): AreaDatasource {
-        return Room.databaseBuilder(application, AreaDatasource::class.java, "tasks.db")
-            .fallbackToDestructiveMigration().build()
+        return Room.databaseBuilder(application, AreaDatasource::class.java, "area.db").fallbackToDestructiveMigration() .build()
     }
 
     fun provideDao(database: AreaDatasource): AreaDAO = database.areaDAO()
 
     factory { provideDao(get()) }
     factory { provideDatabaseManager(androidApplication()) }
-
 
     factory {
         AreaRepositoryImpl(get())

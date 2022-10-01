@@ -3,12 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/muril/AndroidStudioProjects/QualidadedeSoftwareAlugacaodeQuadras/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/muril/AndroidStudioProjects/QualidadedeSoftwareAlugacaodeQuadras/app/src/main/res/layout/container_fragment_first.xml" value="0.365625" />
+        <entry key="..\:/Users/muril/AndroidStudioProjects/QualidadedeSoftwareAlugacaodeQuadras/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2" />
+        <entry key="..\:/Users/muril/AndroidStudioProjects/QualidadedeSoftwareAlugacaodeQuadras/app/src/main/res/drawable/ic_baseline_add_business_24.xml" value="0.2" />
+        <entry key="..\:/Users/muril/AndroidStudioProjects/QualidadedeSoftwareAlugacaodeQuadras/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2" />
+        <entry key="..\:/Users/muril/AndroidStudioProjects/QualidadedeSoftwareAlugacaodeQuadras/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/muril/AndroidStudioProjects/QualidadedeSoftwareAlugacaodeQuadras/app/src/main/res/layout/container_fragment_first.xml" value="0.67" />
         <entry key="..\:/Users/muril/AndroidStudioProjects/QualidadedeSoftwareAlugacaodeQuadras/app/src/main/res/layout/content_main.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/muril/AndroidStudioProjects/QualidadedeSoftwareAlugacaodeQuadras/app/src/main/res/layout/fragment_cadastrar_quadra.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/muril/AndroidStudioProjects/QualidadedeSoftwareAlugacaodeQuadras/app/src/main/res/layout/dialog_confirmar_alugamento.xml" value="0.26707132018209406" />
+        <entry key="..\:/Users/muril/AndroidStudioProjects/QualidadedeSoftwareAlugacaodeQuadras/app/src/main/res/layout/fragment_cadastrar_quadra.xml" value="0.25" />
         <entry key="..\:/Users/muril/AndroidStudioProjects/QualidadedeSoftwareAlugacaodeQuadras/app/src/main/res/layout/fragment_first.xml" value="0.26707132018209406" />
         <entry key="..\:/Users/muril/AndroidStudioProjects/QualidadedeSoftwareAlugacaodeQuadras/app/src/main/res/layout/fragment_second.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/muril/AndroidStudioProjects/QualidadedeSoftwareAlugacaodeQuadras/app/src/main/res/menu/menu_main.xml" value="0.26707132018209406" />
       </map>
     </option>
   </component>

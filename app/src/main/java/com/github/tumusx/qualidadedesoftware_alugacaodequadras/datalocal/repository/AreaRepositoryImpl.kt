@@ -28,12 +28,12 @@ class AreaRepositoryImpl(private val database: AreaDatasource) : AreaRepository 
         }
     }
 
-    override suspend fun alugarArea(area: Quadra): Flow<Boolean> = flow{
-        if(area.estaAlugada){
-            emit(false)
-        }else{
+    override suspend fun alugarArea(area: Quadra): Flow<Boolean> = flow {
+        try {
             database.areaDAO().alugarQuadra(area)
             emit(true)
+        }catch (exception: Exception){
+            exception.printStackTrace()
         }
     }
 }

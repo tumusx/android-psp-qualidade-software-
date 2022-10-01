@@ -1,26 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    tools:context=".presenter.view.CadastrarQuadraFragment">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/alugarQuadra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/alugar_quadra"
+        android:textColor="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/nomeQuadra"
+        android:id="@+id/diaAlugarQuadra"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:hint="@string/digite_nome_quadra" />
+        android:hint="@string/diaAlugarQuadra" />
 
     <EditText
-        android:id="@+id/qntdOcupar"
+        android:id="@+id/horarioAlugar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:hint="@string/digite_qntd_quadra"
-        android:inputType="number" />
+        android:hint="@string/horarioAlugar" />
 
 
     <androidx.appcompat.widget.AppCompatButton
@@ -31,5 +40,4 @@
         android:background="@color/black"
         android:text="@string/salvar"
         android:textColor="@color/white" />
-
 </LinearLayout>
